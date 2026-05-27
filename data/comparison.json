@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "React vs Vue for Enterprise: Framework Comparison",
+    "description": "Structured comparison of React and Vue.js for enterprise application development across ecosystem, performance, team scalability, and long-term maintainability.",
+    "version": "1.0.0",
+    "updated": "2026-05-26",
+    "source": "https://swifttechco.com/comparisons/react-vs-vue-enterprise"
+  },
+  "frameworks": {
+    "react": {
+      "name": "React",
+      "vendor": "Meta (Facebook)",
+      "license": "MIT",
+      "language": "JavaScript / TypeScript",
+      "initial_release": 2013,
+      "latest_stable": "18.x",
+      "website": "https://react.dev",
+      "paradigm": "Library (UI layer only)"
+    },
+    "vue": {
+      "name": "Vue.js",
+      "vendor": "Community / Evan You",
+      "license": "MIT",
+      "language": "JavaScript / TypeScript",
+      "initial_release": 2014,
+      "latest_stable": "3.x",
+      "website": "https://vuejs.org",
+      "paradigm": "Progressive framework"
+    }
+  },
+  "dimensions": [
+    {
+      "name": "Learning curve",
+      "react": { "rating": 3, "notes": "JSX requires mental shift; hooks pattern takes time to master; strong TypeScript support" },
+      "vue":   { "rating": 5, "notes": "Single File Components intuitive for most devs; Options API gentle entry point; Composition API adds power" }
+    },
+    {
+      "name": "Ecosystem size",
+      "react": { "rating": 5, "notes": "Largest UI library ecosystem; React Query, Redux Toolkit, React Router, Next.js, Remix, Expo" },
+      "vue":   { "rating": 4, "notes": "Strong ecosystem; Pinia, Vue Router, Nuxt, Vueuse; smaller than React but curated" }
+    },
+    {
+      "name": "TypeScript integration",
+      "react": { "rating": 5, "notes": "First-class TS support; @types/react mature; hooks typed well; industry standard" },
+      "vue":   { "rating": 4, "notes": "Vue 3 fully TypeScript rewritten; script setup with defineProps infers well; Volar IDE support" }
+    },
+    {
+      "name": "Enterprise adoption",
+      "react": { "rating": 5, "notes": "Dominant in enterprise; used by Meta, Airbnb, Netflix, Shopify, countless large orgs" },
+      "vue":   { "rating": 3, "notes": "Strong in Asia/Europe; used by Alibaba, Nintendo; less common in North American enterprise" }
+    },
+    {
+      "name": "Talent availability",
+      "react": { "rating": 5, "notes": "Most in-demand frontend skill globally; largest hiring pool; highest salaries" },
+      "vue":   { "rating": 3, "notes": "Smaller talent pool in most markets; easier to learn so devs ramp quickly" }
+    },
+    {
+      "name": "Performance (runtime)",
+      "react": { "rating": 4, "notes": "Virtual DOM + concurrent features; React 18 Suspense and transitions reduce jank" },
+      "vue":   { "rating": 5, "notes": "Vue 3 Proxy-based reactivity more granular; smaller bundle (34 KB vs 42 KB gzipped)" }
+    },
+    {
+      "name": "State management",
+      "react": { "rating": 4, "notes": "Context + useReducer for simple; Redux Toolkit or Zustand for complex; many patterns" },
+      "vue":   { "rating": 5, "notes": "Pinia is official, minimal boilerplate; Composition API makes shared state natural" }
+    },
+    {
+      "name": "Server-side rendering",
+      "react": { "rating": 5, "notes": "Next.js is industry standard; App Router with Server Components; Remix as alternative" },
+      "vue":   { "rating": 4, "notes": "Nuxt 3 excellent; file-based routing, auto-imports, Nitro server; slightly smaller community" }
+    },
+    {
+      "name": "Testing ecosystem",
+      "react": { "rating": 5, "notes": "React Testing Library is gold standard; Vitest, Jest, Playwright well-supported" },
+      "vue":   { "rating": 4, "notes": "Vue Test Utils + Vitest recommended; solid but smaller body of testing guides" }
+    },
+    {
+      "name": "Long-term stability",
+      "react": { "rating": 4, "notes": "Major API shifts (class to hooks); Meta backing ensures longevity; some churn from Next.js" },
+      "vue":   { "rating": 4, "notes": "Options API still supported in Vue 3; Composition API is the future; stable governance" }
+    },
+    {
+      "name": "Mobile development",
+      "react": { "rating": 5, "notes": "React Native covers iOS and Android; shared logic with web React; large ecosystem" },
+      "vue":   { "rating": 2, "notes": "Vue Native deprecated; NativeScript-Vue maintained but niche; Ionic/Capacitor possible" }
+    },
+    {
+      "name": "Code splitting and lazy loading",
+      "react": { "rating": 5, "notes": "React.lazy + Suspense; granular with dynamic import(); Next.js handles automatically" },
+      "vue":   { "rating": 5, "notes": "defineAsyncComponent; Nuxt automatic route-based splitting; on par with React" }
+    }
+  ],
+  "use_case_recommendations": [
+    {
+      "use_case": "Large enterprise SPA with complex state",
+      "recommendation": "react",
+      "reason": "Largest talent pool, mature state management options, proven at scale"
+    },
+    {
+      "use_case": "Marketing site with partial interactivity",
+      "recommendation": "vue",
+      "reason": "Progressive enhancement model lets you add Vue to existing HTML; faster ramp"
+    },
+    {
+      "use_case": "Cross-platform web + mobile app",
+      "recommendation": "react",
+      "reason": "React Native shares logic with web React; no equivalent in Vue ecosystem"
+    },
+    {
+      "use_case": "Team of mostly backend devs building internal tools",
+      "recommendation": "vue",
+      "reason": "Single File Components and Options API are intuitive without deep JS framework experience"
+    },
+    {
+      "use_case": "High-SEO content platform",
+      "recommendation": "react",
+      "reason": "Next.js App Router with Server Components is the most battle-tested SSR solution"
+    },
+    {
+      "use_case": "Startup needing fast iteration",
+      "recommendation": "vue",
+      "reason": "Less boilerplate, gentler learning curve, Nuxt batteries-included for quick launches"
+    }
+  ],
+  "bundle_size_comparison": {
+    "react": { "runtime_gzip_kb": 42, "with_react_dom": true },
+    "vue":   { "runtime_gzip_kb": 34, "with_dom": true }
+  },
+  "github_stats": {
+    "react": { "stars_approximate": 225000, "weekly_npm_downloads_millions": 25 },
+    "vue":   { "stars_approximate": 207000, "weekly_npm_downloads_millions": 6 }
+  }
+}
